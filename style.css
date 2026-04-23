@@ -116,6 +116,24 @@ h1.glitch {
     font-weight: bold;
     background: linear-gradient(135deg, var(--char-color), transparent);
     border: 2px solid var(--char-color);
+    position: relative;
+    overflow: visible;
+}
+
+.char-hover-img {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+    border-radius: 32px;
+    background: #fff;
+    object-fit: cover;
+    pointer-events: none;
+    width: 160px !important;
+    height: 160px !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    display: none;
 }
 
 .char-card span {
