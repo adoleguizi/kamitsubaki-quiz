@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神椿老婆匹配测试 | KAMITSUBAKI Wife Match</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Landing Page -->
+        <div id="landing" class="page active">
+            <div class="landing-content">
+                <h1 class="glitch" data-text="神椿老婆匹配测试">神椿老婆匹配测试</h1>
+                <p class="subtitle">通过性格测试，找到属于你的神椿魔女</p>
+                <div class="character-preview">
+                    <div class="char-card" style="--char-color: #e8a0d0;">
+                        <div class="char-icon kaf-icon">花</div>
+                        <span>花谱</span>
+                    </div>
+                    <div class="char-card" style="--char-color: #a0c8e8;">
+                        <div class="char-icon rim-icon">理</div>
+                        <span>理芽</span>
+                    </div>
+                    <div class="char-card" style="--char-color: #8080c0;">
+                        <div class="char-icon isekai-icon">異</div>
+                        <span>异世界情绪</span>
+                    </div>
+                    <div class="char-card" style="--char-color: #e8a060;">
+                        <div class="char-icon haru-icon">春</div>
+                        <span>春猿火</span>
+                    </div>
+                    <div class="char-card" style="--char-color: #c0a0e0;">
+                        <div class="char-icon koko-icon">幸</div>
+                        <span>幸祜</span>
+                    </div>
+                </div>
+                <button id="start-btn" class="start-btn">开始测试</button>
+                <p class="hint">共 12 道题 · 约 3 分钟</p>
+            </div>
+            <div class="particles" id="particles"></div>
+        </div>
+
+        <!-- Quiz Page -->
+        <div id="quiz" class="page">
+            <div class="quiz-header">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <span class="question-counter" id="question-counter">1 / 12</span>
+            </div>
+            <div class="question-container">
+                <h2 class="question" id="question"></h2>
+                <div class="options" id="options"></div>
+            </div>
+        </div>
+
+        <!-- Result Page -->
+        <div id="result" class="page">
+            <div class="result-content">
+                <p class="result-label">你的神椿老婆是</p>
+                <div class="result-character" id="result-character"></div>
+                <div class="result-info" id="result-info"></div>
+                <div class="result-type" id="result-type"></div>
+                <div class="result-desc" id="result-desc"></div>
+                <div class="compatibility" id="compatibility"></div>
+                <div class="result-actions">
+                    <button id="retry-btn" class="retry-btn">重新测试</button>
+                    <button id="share-btn" class="share-btn">分享结果</button>
+                </div>
+            </div>
+            <div class="particles" id="result-particles"></div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
