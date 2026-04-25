@@ -1,7 +1,7 @@
 // 神椿魔女匹配测试 - 核心交互逻辑
 const state = {
     currentQuestion: 0,
-    scores: { kaf: 0, rim: 0, isekai: 0, haru: 0, koko: 0 },
+    scores: { kaf: 0, rim: 0, isekai: 0, haru: 0, koko: 0, ciel: 0, kaika: 0, sorasaki: 0 },
     selectedOption: null
 };
 
@@ -30,7 +30,7 @@ function initParticles(container) {
     if (!container) return;
     container.innerHTML = '';
     const count = window.innerWidth < 600 ? 30 : 50;
-    const colors = ['#e8a0d0', '#a0c8e8', '#8080c0', '#e8a060', '#c0a0e0'];
+    const colors = ['#e8a0d0', '#a0c8e8', '#8080c0', '#e8a060', '#c0a0e0', '#60d0d0', '#d06080', '#80c0a0'];
     
     for (let i = 0; i < count; i++) {
         const p = document.createElement('div');
@@ -125,7 +125,7 @@ function calculateResult() {
 // 重置测试
 function resetQuiz() {
     state.currentQuestion = 0;
-    state.scores = { kaf: 0, rim: 0, isekai: 0, haru: 0, koko: 0 };
+    state.scores = { kaf: 0, rim: 0, isekai: 0, haru: 0, koko: 0, ciel: 0, kaika: 0, sorasaki: 0 };
     state.selectedOption = null;
     loadCurrentQuestion();
     showPage('quiz');

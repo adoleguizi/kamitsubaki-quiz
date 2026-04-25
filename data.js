@@ -44,6 +44,33 @@ const characters = {
         icon: '幸',
         desc: '你是幸祜——徜徉于虚拟之海的电子魔女。你有些社恐，但内心温柔而坚定。你拥有空灵美丽的歌声般的灵魂，不善于言辞却能用行动传达深深的情感。你是安静的力量。',
         emoji: '✨'
+    },
+    ciel: {
+        name: 'CIEL',
+        nameJp: 'CIEL',
+        color: '#60d0d0',
+        type: 'INFP · 天空魔女',
+        icon: '天',
+        desc: '你是CIEL——来自天空的安静魔女。你性格内向、阴湿而细腻，不善于主动与人交流，但内心世界丰富而深邃。你习惯在角落中默默观察，用无声的方式表达自己的存在。你的温柔是含蓄的，却带着一种独特的吸引力。',
+        emoji: '☁️'
+    },
+    kaika: {
+        name: '廻花',
+        nameJp: 'KAIKA',
+        color: '#d06080',
+        type: 'ENFP · 开花魔女',
+        icon: '廻',
+        desc: '你是廻花——如花朵般绽放的开朗魔女。你活泼、热情、充满感染力，总是能用笑容和话语点亮周围的气氛。你善于表达情感，喜欢和人分享自己的快乐，像春天的花一样充满生命力。',
+        emoji: '🌺'
+    },
+    sorasaki: {
+        name: '空爽',
+        nameJp: 'SORASAKI',
+        color: '#80c0a0',
+        type: 'ESFJ · 活力魔女',
+        icon: '爽',
+        desc: '你是空爽——元气满满的活力少女！你乐观、积极、充满行动力，总是带着满满的笑容面对每一天。你喜欢热闹，善于照顾身边的人，用你阳光般的热情感染着每一个与你相遇的人。',
+        emoji: '🌟'
     }
 };
 
@@ -156,6 +183,42 @@ const questions = [
             { text: '紫色——神秘而深邃', char: 'isekai', score: 3 },
             { text: '橙色——热情而活力', char: 'haru', score: 3 }
         ]
+    },
+    {
+        question: '在一个热闹的派对上，你最想做什么？',
+        options: [
+            { text: '在角落里安静待着，观察周围的人', char: 'ciel', score: 3 },
+            { text: '成为焦点，和所有人打成一片', char: 'haru', score: 3 },
+            { text: '和几个熟人聚在一起开心地聊天', char: 'kaika', score: 3 },
+            { text: '拉着朋友一起玩游戏活跃气氛', char: 'sorasaki', score: 3 }
+        ]
+    },
+    {
+        question: '空闲时间你最喜欢怎么度过？',
+        options: [
+            { text: '一个人窝在家里安静地做自己喜欢的事', char: 'ciel', score: 3 },
+            { text: '约朋友出去玩，享受当下的快乐', char: 'kaika', score: 3 },
+            { text: '做些运动或户外活动释放能量', char: 'sorasaki', score: 3 },
+            { text: '整理自己的生活空间和计划', char: 'rim', score: 3 }
+        ]
+    },
+    {
+        question: '当你感到不开心时，你通常会？',
+        options: [
+            { text: '自己默默消化情绪，不想让别人担心', char: 'ciel', score: 3 },
+            { text: '找信任的人倾诉', char: 'kaf', score: 3 },
+            { text: '去外面跑一圈或者吃顿好吃的让自己开心起来', char: 'sorasaki', score: 3 },
+            { text: '用创作或表达来释放情绪', char: 'kaika', score: 3 }
+        ]
+    },
+    {
+        question: '你觉得自己最大的魅力点是？',
+        options: [
+            { text: '那种若即若离的神秘感', char: 'ciel', score: 3 },
+            { text: '永远挂着的笑容和感染力', char: 'kaika', score: 3 },
+            { text: '永远用不完的活力和正能量', char: 'sorasaki', score: 3 },
+            { text: '认真专注时散发的沉稳气质', char: 'koko', score: 3 }
+        ]
     }
 ];
 
@@ -163,32 +226,74 @@ const questions = [
 const compatibility = {
     kaf: [
         { char: 'rim', label: '理芽', percent: 95 },
+        { char: 'kaika', label: '廻花', percent: 88 },
         { char: 'koko', label: '幸祜', percent: 80 },
+        { char: 'ciel', label: 'CIEL', percent: 82 },
         { char: 'isekai', label: '异世界情绪', percent: 75 },
+        { char: 'sorasaki', label: '空爽', percent: 70 },
         { char: 'haru', label: '春猿火', percent: 65 }
     ],
     rim: [
         { char: 'kaf', label: '花谱', percent: 95 },
         { char: 'koko', label: '幸祜', percent: 85 },
+        { char: 'sorasaki', label: '空爽', percent: 75 },
+        { char: 'kaika', label: '廻花', percent: 72 },
+        { char: 'ciel', label: 'CIEL', percent: 70 },
         { char: 'haru', label: '春猿火', percent: 70 },
         { char: 'isekai', label: '异世界情绪', percent: 65 }
     ],
     isekai: [
         { char: 'koko', label: '幸祜', percent: 90 },
+        { char: 'ciel', label: 'CIEL', percent: 78 },
         { char: 'haru', label: '春猿火', percent: 80 },
         { char: 'kaf', label: '花谱', percent: 75 },
-        { char: 'rim', label: '理芽', percent: 65 }
+        { char: 'rim', label: '理芽', percent: 65 },
+        { char: 'kaika', label: '廻花', percent: 60 },
+        { char: 'sorasaki', label: '空爽', percent: 58 }
     ],
     haru: [
         { char: 'koko', label: '幸祜', percent: 90 },
+        { char: 'kaika', label: '廻花', percent: 85 },
+        { char: 'sorasaki', label: '空爽', percent: 80 },
         { char: 'isekai', label: '异世界情绪', percent: 80 },
         { char: 'rim', label: '理芽', percent: 70 },
-        { char: 'kaf', label: '花谱', percent: 65 }
+        { char: 'kaf', label: '花谱', percent: 65 },
+        { char: 'ciel', label: 'CIEL', percent: 55 }
     ],
     koko: [
+        { char: 'isekai', label: '异世界情绪', percent: 90 },
         { char: 'haru', label: '春猿火', percent: 90 },
         { char: 'rim', label: '理芽', percent: 85 },
         { char: 'kaf', label: '花谱', percent: 80 },
-        { char: 'isekai', label: '异世界情绪', percent: 90 }
+        { char: 'ciel', label: 'CIEL', percent: 88 },
+        { char: 'kaika', label: '廻花', percent: 72 },
+        { char: 'sorasaki', label: '空爽', percent: 68 }
+    ],
+    ciel: [
+        { char: 'koko', label: '幸祜', percent: 88 },
+        { char: 'kaf', label: '花谱', percent: 82 },
+        { char: 'isekai', label: '异世界情绪', percent: 78 },
+        { char: 'rim', label: '理芽', percent: 70 },
+        { char: 'kaika', label: '廻花', percent: 60 },
+        { char: 'haru', label: '春猿火', percent: 55 },
+        { char: 'sorasaki', label: '空爽', percent: 50 }
+    ],
+    kaika: [
+        { char: 'kaf', label: '花谱', percent: 88 },
+        { char: 'haru', label: '春猿火', percent: 85 },
+        { char: 'sorasaki', label: '空爽', percent: 82 },
+        { char: 'rim', label: '理芽', percent: 72 },
+        { char: 'koko', label: '幸祜', percent: 72 },
+        { char: 'isekai', label: '异世界情绪', percent: 60 },
+        { char: 'ciel', label: 'CIEL', percent: 60 }
+    ],
+    sorasaki: [
+        { char: 'kaika', label: '廻花', percent: 82 },
+        { char: 'haru', label: '春猿火', percent: 80 },
+        { char: 'rim', label: '理芽', percent: 75 },
+        { char: 'kaf', label: '花谱', percent: 70 },
+        { char: 'koko', label: '幸祜', percent: 68 },
+        { char: 'isekai', label: '异世界情绪', percent: 58 },
+        { char: 'ciel', label: 'CIEL', percent: 50 }
     ]
 };
