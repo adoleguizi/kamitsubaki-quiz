@@ -81,8 +81,8 @@ const questions = [
         options: [
             { text: '尽情释放自己，和所有人聊天互动', char: 'haru', score: 3 },
             { text: '和几个聊得来的朋友深入交流', char: 'kaf', score: 3 },
-            { text: '在一旁观察大家，偶尔参与话题', char: 'isekai', score: 3 },
-            { text: '找个安静的角落待着，不太想社交', char: 'koko', score: 3 }
+            { text: '在角落里安静待着，观察周围的人', char: 'ciel', score: 3 },
+            { text: '找个安静的角落待着，不太想社交', char: 'koko', score: 2 }
         ]
     },
     {
@@ -90,8 +90,8 @@ const questions = [
         options: [
             { text: '先认真听TA说完，然后一起分析问题找解决办法', char: 'rim', score: 3 },
             { text: '感同身受地陪TA一起难过，给TA温暖的拥抱', char: 'kaf', score: 3 },
-            { text: '用幽默和元气让TA开心起来，带TA去吃好吃的', char: 'haru', score: 3 },
-            { text: '默默陪伴，用行动而不是话语表达关心', char: 'koko', score: 3 }
+            { text: '用幽默和元气让TA开心起来，带TA去吃好吃的', char: 'kaika', score: 3 },
+            { text: '默默陪伴，用行动而不是话语表达关心', char: 'koko', score: 2 }
         ]
     },
     {
@@ -99,8 +99,8 @@ const questions = [
         options: [
             { text: '自由自在地创作，表达自己的内心世界', char: 'kaf', score: 3 },
             { text: '事业有成，成为身边人可以依靠的存在', char: 'rim', score: 3 },
-            { text: '不断追求真相，揭开世界的秘密', char: 'isekai', score: 3 },
-            { text: '充满冒险和刺激，每天都不一样', char: 'haru', score: 3 }
+            { text: '充满冒险和刺激，每天都不一样', char: 'sorasaki', score: 3 },
+            { text: '在角落里默默观察世界', char: 'ciel', score: 2 }
         ]
     },
     {
@@ -108,7 +108,7 @@ const questions = [
         options: [
             { text: '它让我感受到了某种强烈的情绪', char: 'kaf', score: 3 },
             { text: '分析画家的技法和构图逻辑', char: 'isekai', score: 3 },
-            { text: '想知道画家想传达什么信息', char: 'rim', score: 3 },
+            { text: '这画一定藏着什么秘密', char: 'kaika', score: 2 },
             { text: '嗯...挺好看的（内心毫无波澜）', char: 'koko', score: 3 }
         ]
     },
@@ -118,7 +118,7 @@ const questions = [
             { text: '听从内心的声音，跟着感觉走', char: 'kaf', score: 3 },
             { text: '列出利弊，理性分析后再决定', char: 'rim', score: 3 },
             { text: '先做了再说，边做边调整', char: 'haru', score: 3 },
-            { text: '深思熟虑，想清楚所有可能性再行动', char: 'isekai', score: 3 }
+            { text: '深思熟虑，想清楚所有可能性再行动', char: 'sorasaki', score: 2 }
         ]
     },
     {
@@ -126,8 +126,8 @@ const questions = [
         options: [
             { text: '窝在床上听音乐或看动漫', char: 'koko', score: 3 },
             { text: '约朋友出去逛街吃饭', char: 'haru', score: 3 },
-            { text: '整理房间，规划这一周的安排', char: 'rim', score: 3 },
-            { text: '发呆，让思绪飘到远方', char: 'isekai', score: 3 }
+            { text: '一个人窝在家里安静地做自己喜欢的事', char: 'ciel', score: 3 },
+            { text: '发呆，让思绪飘到远方', char: 'isekai', score: 2 }
         ]
     },
     {
@@ -135,8 +135,8 @@ const questions = [
         options: [
             { text: '规则是用来打破的！创新需要突破', char: 'haru', score: 3 },
             { text: '理解规则存在的意义，但在合理范围内灵活变通', char: 'rim', score: 3 },
-            { text: '不喜欢被束缚，更想做自己觉得对的事', char: 'kaf', score: 3 },
-            { text: '默默遵守，不去挑战也没关系', char: 'koko', score: 3 }
+            { text: '不喜欢被束缚，更想做自己觉得对的事', char: 'kaika', score: 2 },
+            { text: '默默遵守，不去挑战也没关系', char: 'ciel', score: 3 }
         ]
     },
     {
@@ -144,16 +144,16 @@ const questions = [
         options: [
             { text: '读心术——能理解每个人的内心', char: 'kaf', score: 3 },
             { text: '预知未来——看到世界的发展方向', char: 'isekai', score: 3 },
-            { text: '治愈之力——帮助身边的人摆脱痛苦', char: 'rim', score: 3 },
-            { text: '瞬间移动——随时随地去任何地方冒险', char: 'haru', score: 3 }
+            { text: '瞬间移动——随时随地去任何地方冒险', char: 'sorasaki', score: 3 },
+            { text: '治愈之力——帮助身边的人摆脱痛苦', char: 'rim', score: 2 }
         ]
     },
     {
         question: '在团队合作中，你通常扮演什么角色？',
         options: [
             { text: '领导者——统筹规划，分配任务', char: 'rim', score: 3 },
-            { text: '创意担当——提供想法和灵感', char: 'kaf', score: 3 },
-            { text: '气氛组——活跃气氛，团结大家', char: 'haru', score: 3 },
+            { text: '创意担当——提供想法和灵感', char: 'kaf', score: 2 },
+            { text: '气氛组——活跃气氛，团结大家', char: 'kaika', score: 3 },
             { text: '默默做事的类型——不声张但很靠谱', char: 'koko', score: 3 }
         ]
     },
@@ -162,62 +162,107 @@ const questions = [
         options: [
             { text: '单曲循环一整天，沉浸在情绪里', char: 'kaf', score: 3 },
             { text: '研究歌词的含义和编曲的技巧', char: 'isekai', score: 3 },
-            { text: '立刻分享给所有朋友！', char: 'haru', score: 3 },
-            { text: '默默收藏到歌单，偶尔翻出来听', char: 'koko', score: 3 }
+            { text: '立刻分享给所有朋友！', char: 'haru', score: 2 },
+            { text: '默默收藏到歌单，偶尔翻出来听', char: 'sorasaki', score: 3 }
         ]
     },
     {
         question: '你对"孤独"的看法是？',
         options: [
-            { text: '孤独是可怕的，我更喜欢有人陪伴', char: 'haru', score: 3 },
+            { text: '孤独是可怕的，我更喜欢有人陪伴', char: 'kaika', score: 3 },
             { text: '孤独是一种享受，能让我更好地思考', char: 'isekai', score: 3 },
             { text: '孤独中带着美感，是一种安静的力量', char: 'koko', score: 3 },
-            { text: '孤独时我会创作，把情感化为文字或音乐', char: 'kaf', score: 3 }
+            { text: '孤独时我会创作，把情感化为文字或音乐', char: 'ciel', score: 2 }
         ]
     },
     {
         question: '如果要用一种颜色形容自己，你会选？',
         options: [
-            { text: '粉色——温柔而感性', char: 'kaf', score: 3 },
+            { text: '粉色——温柔而感性', char: 'kaf', score: 2 },
             { text: '蓝色——冷静而理性', char: 'rim', score: 3 },
-            { text: '紫色——神秘而深邃', char: 'isekai', score: 3 },
-            { text: '橙色——热情而活力', char: 'haru', score: 3 }
+            { text: '紫色——神秘而深邃', char: 'isekai', score: 2 },
+            { text: '天蓝色——自由自在无拘无束', char: 'ciel', score: 3 }
         ]
     },
     {
-        question: '在一个热闹的派对上，你最想做什么？',
+        question: '你喜欢吃软糖吗？',
         options: [
-            { text: '在角落里安静待着，观察周围的人', char: 'ciel', score: 3 },
-            { text: '成为焦点，和所有人打成一片', char: 'haru', score: 3 },
-            { text: '和几个熟人聚在一起开心地聊天', char: 'kaika', score: 3 },
-            { text: '拉着朋友一起玩游戏活跃气氛', char: 'sorasaki', score: 3 }
+            { text: '超爱！零食柜里永远少不了', char: 'rim', score: 3 },
+            { text: '还行，偶尔吃几颗', char: 'koko', score: 2 },
+            { text: '不太感兴趣', char: 'haru', score: 1 },
+            { text: '更喜欢巧克力或薯片', char: 'kaika', score: 1 }
         ]
     },
     {
-        question: '空闲时间你最喜欢怎么度过？',
+        question: '你的性格更接近哪种类型？',
         options: [
-            { text: '一个人窝在家里安静地做自己喜欢的事', char: 'ciel', score: 3 },
-            { text: '约朋友出去玩，享受当下的快乐', char: 'kaika', score: 3 },
-            { text: '做些运动或户外活动释放能量', char: 'sorasaki', score: 3 },
-            { text: '整理自己的生活空间和计划', char: 'rim', score: 3 }
+            { text: '大大咧咧、随性自在，想到什么就做什么', char: 'koko', score: 3 },
+            { text: '活泼外向、热情开朗', char: 'haru', score: 2 },
+            { text: '安静内敛、心思细腻', char: 'ciel', score: 3 },
+            { text: '沉稳理性、做事有计划', char: 'rim', score: 1 }
         ]
     },
     {
-        question: '当你感到不开心时，你通常会？',
+        question: '你觉得自己身上有"大人感"吗？',
         options: [
-            { text: '自己默默消化情绪，不想让别人担心', char: 'ciel', score: 3 },
-            { text: '找信任的人倾诉', char: 'kaf', score: 3 },
-            { text: '去外面跑一圈或者吃顿好吃的让自己开心起来', char: 'sorasaki', score: 3 },
-            { text: '用创作或表达来释放情绪', char: 'kaika', score: 3 }
+            { text: '有！性格凛然，给人成熟可靠的感觉', char: 'koko', score: 3 },
+            { text: '有时候会有，但大部分时候还是小孩心性', char: 'kaf', score: 1 },
+            { text: '完全没有，我就是个孩子', char: 'kaika', score: 3 },
+            { text: '比起成熟，更偏理性冷静', char: 'isekai', score: 1 }
         ]
     },
     {
-        question: '你觉得自己最大的魅力点是？',
+        question: '你对身高的态度是？',
         options: [
-            { text: '那种若即若离的神秘感', char: 'ciel', score: 3 },
-            { text: '永远挂着的笑容和感染力', char: 'kaika', score: 3 },
-            { text: '永远用不完的活力和正能量', char: 'sorasaki', score: 3 },
-            { text: '认真专注时散发的沉稳气质', char: 'koko', score: 3 }
+            { text: '矮怎么了！小个子超可爱的', char: 'isekai', score: 3 },
+            { text: '身高不重要，有趣才是关键', char: 'kaika', score: 2 },
+            { text: '无所谓，高矮都行', char: 'sorasaki', score: 3 },
+            { text: '还是更喜欢高一点的', char: 'koko', score: 1 }
+        ]
+    },
+    {
+        question: '如果要出国留学，你会选择？',
+        options: [
+            { text: '美国——开放自由的氛围更适合我', char: 'rim', score: 3 },
+            { text: '欧洲——历史悠久，文化底蕴深厚', char: 'kaf', score: 1 },
+            { text: '日本——二次元文化的大本营', char: 'koko', score: 1 },
+            { text: '澳洲——阳光沙滩太舒服了', char: 'haru', score: 1 }
+        ]
+    },
+    {
+        question: '在一个聚会上遇到新朋友，你会？',
+        options: [
+            { text: '热情地自我介绍，很快和大家打成一片', char: 'kaika', score: 3 },
+            { text: '微笑点头，等对方先开口', char: 'ciel', score: 3 },
+            { text: '拉着熟悉的朋友一起玩，慢慢认识新人', char: 'sorasaki', score: 2 },
+            { text: '待在熟悉的人身边就好', char: 'koko', score: 1 }
+        ]
+    },
+    {
+        question: '下雨天你最喜欢做什么？',
+        options: [
+            { text: '窝在家里听雨声，享受安静的时光', char: 'ciel', score: 3 },
+            { text: '撑着伞出门散步，感受雨天的氛围', char: 'kaf', score: 2 },
+            { text: '叫朋友来家里开室内派对', char: 'kaika', score: 3 },
+            { text: '窝在床上看剧吃零食', char: 'koko', score: 1 }
+        ]
+    },
+    {
+        question: '你认为最珍贵的友情是什么样的？',
+        options: [
+            { text: '能互相倾诉心事，彼此理解', char: 'kaf', score: 2 },
+            { text: '能一起疯一起闹，永远充满欢笑', char: 'sorasaki', score: 3 },
+            { text: '即使不说话也不会觉得尴尬', char: 'koko', score: 3 },
+            { text: '能互相激励，一起成长进步', char: 'rim', score: 2 }
+        ]
+    },
+    {
+        question: '如果可以瞬间到达世界任何一个地方，你会去哪？',
+        options: [
+            { text: '东京涩谷——感受潮流文化', char: 'kaika', score: 3 },
+            { text: '冰岛——看极光，放空自己', char: 'isekai', score: 3 },
+            { text: '纽约——感受大城市的节奏', char: 'rim', score: 2 },
+            { text: '海边——安静无人就好', char: 'ciel', score: 2 }
         ]
     }
 ];
