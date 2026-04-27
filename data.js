@@ -264,6 +264,24 @@ const questions = [
             { text: '纽约——感受大城市的节奏', char: 'rim', score: 2 },
             { text: '海边——安静无人就好', char: 'ciel', score: 2 }
         ]
+    },
+    {
+        question: '你觉得自己是否黑暗？',
+        options: [
+            { text: '是的，我感觉自己很黑暗', char: 'isekai', score: 3 },
+            { text: '不是，我很阳光', char: 'rim', score: 1 },
+            { text: '有点复杂，但不算黑暗', char: 'ciel', score: 1 },
+            { text: '不确定', char: 'kaf', score: 2 }
+        ]
+    },
+    {
+        question: '你是否喜欢日本流行音乐？',
+        options: [
+            { text: '超喜欢！日本流行音乐是我的最爱', char: 'rim', score: 3 },
+            { text: '喜欢，特别是动画歌曲', char: 'kaf', score: 3 },
+            { text: '还行，会跟着节奏摇摆', char: 'sorasaki', score: 3 },
+            { text: '不太感冒，更喜欢其他类型', char: 'isekai', score: 1 }
+        ]
     }
 ];
 
